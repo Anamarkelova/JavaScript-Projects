@@ -16,3 +16,8 @@ var result = 10 + 5;
 
 // Display the result of the expression. 
 document.write("<br>The result of the expression is: " + result);
+
+// This function runs when the button is clicked. 
+function showMessage() {
+window.alert("You clicked the button!"); 
+}
