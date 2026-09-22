@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Challenge</title>
+
+    <!-- Load the jQuery library. -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- This heading will respond to a jQuery click event. -->
+    <h1 id="heading">jQuery Challenge</h1>
+
+    <p id="message">Click the button to see a jQuery event and effect.</p>
+
+    <button id="myButton">Click Me</button>
+
+    <script>
+        // jQuery event: click()
+        // When the button is clicked, the function runs.
+
+        $("#myButton").click(function () {
+
+            // Change the message when the button is clicked.
+            $("#message").text("The jQuery click event worked!");
+
+            // jQuery effect: fadeOut()
+            // The heading gradually disappears.
+            $("#heading").fadeOut(2000);
+        });
+    </script>
+
+</body>
+
+</html>
