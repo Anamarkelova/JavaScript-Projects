@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localStorage Assignment</title>
+</head>
+<body>
+
+    <h1>localStorage Example</h1>
+
+    <p id="output"></p>
+
+    <script>
+        // Store a value in localStorage
+        localStorage.setItem("name", "Ana");
+
+        // Retrieve the value from localStorage
+        let savedName = localStorage.getItem("name");
+
+        // Display the saved value
+        document.getElementById("output").innerHTML =
+            "The saved name is: " + savedName;
+    </script>
+
+</body>
+</html>

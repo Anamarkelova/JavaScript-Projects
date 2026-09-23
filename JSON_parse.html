@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON.parse() Assignment</title>
+</head>
+<body>
+
+    <h1>JSON.parse() Example</h1>
+
+    <p id="output"></p>
+
+    <script>
+        // Create a JSON string
+        let jsonString = '{"name":"Ana","age":44,"city":"Toronto"}';
+
+        // Convert the JSON string into a JavaScript object
+        let person = JSON.parse(jsonString);
+
+        // Display information from the JavaScript object
+        document.getElementById("output").innerHTML =
+            "Name: " + person.name + "<br>" +
+            "Age: " + person.age + "<br>" +
+            "City: " + person.city;
+    </script>
+
+</body>
+</html>

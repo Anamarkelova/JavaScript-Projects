@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON.stringify() Assignment</title>
+</head>
+<body>
+
+    <h1>JSON.stringify() Example</h1>
+
+    <p id="output"></p>
+
+    <script>
+        // Create a JavaScript object
+        let person = {
+            name: "Ana",
+            age: 44,
+            city: "Toronto"
+        };
+
+        // Convert the JavaScript object into a JSON string
+        let jsonString = JSON.stringify(person);
+
+        // Display the JSON string in the browser
+        document.getElementById("output").innerHTML = jsonString;
+    </script>
+
+</body>
+</html>
